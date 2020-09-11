@@ -1,6 +1,8 @@
 import {Module} from "@nestjs/common";
 import {UsuarioController} from "./usuario.controller";
 import {UsuarioService} from "./usuario.service";
+import {TypeOrmModule} from "@nestjs/typeorm";
+import {UsuarioEntity} from "./usuario.entity";
 
 @Module(
     {
@@ -8,14 +10,14 @@ import {UsuarioService} from "./usuario.service";
             UsuarioController
         ],
         imports: [
-            /*MascotaModule,
+            /*MascotaModule,*/
             TypeOrmModule
                 .forFeature(
                     [
                         UsuarioEntity
                     ],
                     'default' //Nombre cadena de conexion
-                )*/
+                )
         ],
         providers: [
             UsuarioService
