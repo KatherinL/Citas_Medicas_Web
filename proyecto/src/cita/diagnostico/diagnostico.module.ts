@@ -1,28 +1,31 @@
 import {Module} from "@nestjs/common";
-import {UsuarioController} from "./usuario.controller";
-import {UsuarioService} from "./usuario.service";
 import {TypeOrmModule} from "@nestjs/typeorm";
-import {UsuarioEntity} from "./usuario.entity";
+import {DiagnosticoController} from "./diagnostico.controller";
+import {DiagnosticoEntity} from "./diagnostico.entity";
+import {DiagnosticoService} from "./diagnostico.service";
 
 @Module(
     {
         controllers: [
-            UsuarioController
+            DiagnosticoController
         ],
         imports: [
             TypeOrmModule
                 .forFeature(
                     [
-                        UsuarioEntity
+                        DiagnosticoEntity
                     ],
                     'default' //Nombre cadena de conexion
                 )
         ],
         providers: [
-            UsuarioService
+            DiagnosticoService
+        ],
+        exports:[
+            DiagnosticoService
         ]
     }
 )
-export class UsuarioModule{
+export class DiagnosticoModule{
 
 }

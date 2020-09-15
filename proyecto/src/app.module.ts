@@ -9,10 +9,23 @@ import {CitaEntity} from "./cita/cita.entity";
 import {DiagnosticoEntity} from "./cita/diagnostico/diagnostico.entity";
 import {ExamenEntity} from "./cita/examen/examen.entity";
 import {SignosVitalesEntity} from "./cita/signos_vitales/signos-vitales.entity";
+import {UsuarioModule} from "./usuario/usuario.module";
+import {DoctorModule} from "./usuario/doctor/doctor.module";
+import {EspecialidadModule} from "./usuario/doctor/especialidad/especialidad.module";
+import {CitaModule} from "./cita/cita.module";
+import {DiagnosticoModule} from "./cita/diagnostico/diagnostico.module";
+import {ExamenModule} from "./cita/examen/examen.module";
+import {SignosVitalesModule} from "./cita/signos_vitales/signos-vitales.module";
 
 @Module({
   imports: [
-
+    UsuarioModule,
+    DoctorModule,
+    EspecialidadModule,
+    CitaModule,
+    DiagnosticoModule,
+    ExamenModule,
+    SignosVitalesModule,
     TypeOrmModule
         .forRoot({
           name: 'default', //nombre conexion

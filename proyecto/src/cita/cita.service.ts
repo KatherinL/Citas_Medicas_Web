@@ -1,25 +1,26 @@
 import {Injectable} from "@nestjs/common";
-import {UsuarioEntity} from "./usuario.entity";
-import {FindManyOptions, Like, Repository} from "typeorm";
 import {InjectRepository} from "@nestjs/typeorm";
+import {CitaEntity} from "./cita.entity";
+import {FindManyOptions, Like, Repository} from "typeorm";
 
 @Injectable()
-export class UsuarioService{
+export class CitaService{
+
     constructor(
-        @InjectRepository(UsuarioEntity)
-        private repositorio: Repository<UsuarioEntity>
+        @InjectRepository(CitaEntity)
+        private repositorio: Repository<CitaEntity>
     ) {
     }
 
     //metodos de la entidad
 
-    crearUno(nuevoUsuario:UsuarioEntity){
-        return this.repositorio.save(nuevoUsuario) //devuelve una promesa
+    crearUno(nuevaCita:CitaEntity){
+        return this.repositorio.save(nuevaCita) //devuelve una promesa
     }
 
     buscarTodos(textoDeConsulta?: string) {
 
-        const consulta: FindManyOptions<UsuarioEntity> ={
+        const consulta: FindManyOptions<CitaEntity> ={
             where: [
                 {
                     nombre: Like(`%${textoDeConsulta}%`)
@@ -39,8 +40,8 @@ export class UsuarioService{
         return this.repositorio.findOne(id) //promesa
     }
 
-    editarUno(usuarioEditado: UsuarioEntity){
-        return this.repositorio.save(usuarioEditado);
+    editarUno(citaEditada: CitaEntity){
+        return this.repositorio.save(citaEditada);
     }
 
     eliminarUno(id: number){

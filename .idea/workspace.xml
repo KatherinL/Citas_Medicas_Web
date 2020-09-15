@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -26,9 +29,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6192312b-778a-49a8-bc6d-803a8e1af1a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/diagnostico/diagnostico.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/diagnostico/diagnostico.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/diagnostico/diagnostico.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/examen/examen.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/examen/examen.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/examen/examen.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/signos_vitales/signos-vitales.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/signos_vitales/signos-vitales.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/signos_vitales/signos-vitales.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/especialidad/especialidad.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/especialidad/especialidad.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/especialidad/especialidad.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/usuario.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/usuario.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +60,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/proyecto" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hKgiMbVdUBtdxpWeEonX6iGT3i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -52,7 +76,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Aplicaciones_K\GitKraken\Citas_Medicas_Web\proyecto\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,6 +91,7 @@
       <workItem from="1599765324874" duration="381000" />
       <workItem from="1599765941318" duration="98000" />
       <workItem from="1599774443198" duration="606000" />
+      <workItem from="1600122106067" duration="9740000" />
     </task>
     <servers />
   </component>
@@ -98,15 +124,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/proyecto" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599779449195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1599779449195" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1599765978555">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1600122129561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1599765978555" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600122129561" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600146431608">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600146431608" />
   </component>
 </project>
