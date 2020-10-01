@@ -1,0 +1,18 @@
+h1 {
+    padding-top: 10px;
+    color: #fff;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.img-thumbnail {
+    width: 200px;
+}
+
+span{
+    color: #fff3cd;
+}

@@ -1,0 +1,19 @@
+
+h1 {
+    padding-top: 10px;
+    color: #fff;
+}
+
+h2 {
+    margin-top: 08px;
+    color: #fff;
+}
+
+.img-thumbnail {
+    width: 100%;
+    height: 88vh;
+}
+
+.fondo {
+    background-color: white;
+}

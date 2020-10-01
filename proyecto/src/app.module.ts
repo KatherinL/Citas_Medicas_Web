@@ -16,6 +16,7 @@ import {CitaModule} from "./cita/cita.module";
 import {DiagnosticoModule} from "./cita/diagnostico/diagnostico.module";
 import {ExamenModule} from "./cita/examen/examen.module";
 import {SignosVitalesModule} from "./cita/signos_vitales/signos-vitales.module";
+import {AdministradorModule} from "./usuario/Administrador/administrador.module";
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import {SignosVitalesModule} from "./cita/signos_vitales/signos-vitales.module";
     DiagnosticoModule,
     ExamenModule,
     SignosVitalesModule,
+    AdministradorModule,
     TypeOrmModule
         .forRoot({
           name: 'default', //nombre conexion
@@ -49,6 +51,9 @@ import {SignosVitalesModule} from "./cita/signos_vitales/signos-vitales.module";
         }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+      AppService
+  ],
 })
-export class AppModule {}
+export class AppModule {
+}

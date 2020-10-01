@@ -5,6 +5,7 @@ import {EspecialidadController} from "./especialidad/especialidad.controller";
 import {EspecialidadModule} from "./especialidad/especialidad.module";
 import {DoctorService} from "./doctor.service";
 import {DoctorEntity} from "./doctor.entity";
+import {CitaModule} from "../../cita/cita.module";
 
 @Module(
     {
@@ -13,6 +14,7 @@ import {DoctorEntity} from "./doctor.entity";
         ],
         imports: [
             EspecialidadModule,
+            CitaModule,
             TypeOrmModule
                 .forFeature(
                     [
@@ -22,6 +24,9 @@ import {DoctorEntity} from "./doctor.entity";
                 )
         ],
         providers: [
+            DoctorService
+        ],
+        exports:[
             DoctorService
         ]
     }

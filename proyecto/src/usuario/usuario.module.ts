@@ -3,6 +3,8 @@ import {UsuarioController} from "./usuario.controller";
 import {UsuarioService} from "./usuario.service";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {UsuarioEntity} from "./usuario.entity";
+import {DoctorModule} from "./doctor/doctor.module";
+import {CitaModule} from "../cita/cita.module";
 
 @Module(
     {
@@ -10,6 +12,8 @@ import {UsuarioEntity} from "./usuario.entity";
             UsuarioController
         ],
         imports: [
+            DoctorModule,
+            CitaModule,
             TypeOrmModule
                 .forFeature(
                     [
@@ -20,6 +24,9 @@ import {UsuarioEntity} from "./usuario.entity";
         ],
         providers: [
             UsuarioService
+        ],
+        exports: [
+            UsuarioService  //para poder usarlo desde otros modulos
         ]
     }
 )

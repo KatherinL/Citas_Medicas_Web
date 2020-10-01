@@ -1,0 +1,27 @@
+.imagen {
+    float: left;
+    width: 90%;
+    height: 100vh;
+    margin-right: 0px;
+    background-image: url(../../imagenes/fondo_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+h1 {
+    color: #ffff;
+    width: 800px;
+    text-align: center;
+    padding: 60px 60px 30px;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 300px;
+    width: 800px;
+    text-align: center;
+    padding: 60px 60px 30px;
+    color: #ffff;
+    font-size: 60px;
+}

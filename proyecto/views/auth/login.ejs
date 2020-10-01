@@ -1,0 +1,40 @@
+<%- include('../compartido/estilos-generales')%>
+
+<link rel="stylesheet" href="/css/estilos-login.css">
+
+<div class="content">
+
+    <div class="text">LOGIN</div>
+    <form action="/login" method="POST">
+
+        <div class="field">
+            <span class="fas fa-user"></span>
+            <label for="rolId"></label>
+            <select id="rolId" name="rol" required>
+                <option>Seleccionar...</option>
+                <option value="administrador">Administrador</option>
+                <option value="paciente">Paciente</option>
+                <option value="doctor">Doctor</option>
+            </select>
+        </div>
+        <br>
+        <div class="field">
+            <input id="emailId" name="email" type="text" required>
+            <span class="fas fa-user"></span>
+            <label for="emailId">alguien@example.com</label>
+        </div>
+        <br>
+        <div class="field">
+            <input id="passwordId" name="password" type="password" required>
+            <span class="fas fa-lock"></span>
+            <label for="passwordId">Password</label>
+        </div>
+        <div class="sign-up">
+            Don´t have an account?
+            <a href="/register" >Sign up now</a>
+        </div>
+
+        <button type="submit">Sign in</button>
+
+    </form>
+</div>

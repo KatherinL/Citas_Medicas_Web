@@ -5,6 +5,7 @@ import {CitaEntity} from "../../cita/cita.entity";
 
 @Entity('db_doctor')
 export class DoctorEntity extends UsuarioEntity{
+
     @Column({
         name: 'numero_consultorio',
         type: 'integer',
@@ -13,14 +14,22 @@ export class DoctorEntity extends UsuarioEntity{
     })
     numeroConsultorio: number;
 
+    @Column({
+        name: 'especialidad',
+        type: "varchar",
+        nullable: false,
+        length: '60'
+    })
+    especialidad: string;
+
     //Relaciones
     @ManyToMany(type => EspecialidadEntity)
     @JoinTable()
     especialidades: EspecialidadEntity[];
 
-    /*@OneToMany(
+    @OneToMany(
         type => CitaEntity,
-        cita => cita.doctor
+        citas => citas.doctor
     )
-    cita: CitaEntity[];*/
+    citas: CitaEntity[];
 }

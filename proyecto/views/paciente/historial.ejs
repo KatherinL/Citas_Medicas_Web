@@ -1,0 +1,57 @@
+<%- include('../compartido/estilos-generales')%>
+
+<link rel="stylesheet" href="/css/paciente/estilos-historial.css">
+
+<div>
+        <%- include('nav-paciente') %>
+    <div>
+
+        <h1>SISTEMA DE AGENDACIÓN DE CITAS MEDICAS</h1>
+        <h2>HISTORIAL</h2>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6">
+                    <img class="img-thumbnail" src="/imagenes/img_historial.png" alt="">
+                </div>
+                <div class="col-6">
+
+                    <div class="scroll">
+                        <div class="card" style="width: 45rem;">
+                            <div class="card-body">
+
+                                <% arregloCitas.forEach( (objeto)=> { %>
+                                <% if (objeto.usuario.correo === username) {%>
+                                <div class="form-row" >
+                                    <div class="col-md-4 mb-3">
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.fechaCita %>"
+                                               disabled>
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.hora %>" disabled>
+
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <input type="text" class="form-control mt-2" value=" <%= objeto.doctor.nombre %>"
+                                               disabled>
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.especialidad %>"
+                                               disabled>
+
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <input type="number" class="form-control mt-2" value="<%= objeto.doctor.numeroConsultorio %>"
+                                               disabled>
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.estado %>" disabled>
+
+                                    </div>
+                                </div>
+                                <% } }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

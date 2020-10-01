@@ -24,10 +24,10 @@ export class DoctorService{
                     nombre: Like(`%${textoDeConsulta}%`)
                 },
                 {
-                    apellido: Like(`%${textoDeConsulta}%`)
+                    cedula: Like(`%${textoDeConsulta}%`)
                 },
                 {
-                    cedula: Like(`%${textoDeConsulta}%`)
+                    correo: Like(`%${textoDeConsulta}%`)
                 }
             ]
         }
@@ -45,4 +45,17 @@ export class DoctorService{
     eliminarUno(id: number){
         return this.repositorio.delete(id);
     }
+
+    buscarLogin(email: string, pass: string){
+        const consulta: FindManyOptions<DoctorEntity> ={
+            where: [
+                {
+                    correo: Like(`%${email}%`),
+                    password: Like(`%${pass}%`)
+                }
+            ]
+        }
+        return this.repositorio.find(consulta) //promesa
+    }
+
 }

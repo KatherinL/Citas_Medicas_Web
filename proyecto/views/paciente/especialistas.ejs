@@ -1,0 +1,36 @@
+<%- include('../compartido/estilos-generales')%>
+
+<link rel="stylesheet" href="/css/paciente/estilos-especialistas.css">
+
+<div>
+    <%- include('nav-paciente') %>
+    <div>
+
+        <h1>SISTEMA DE AGENDACIÓN DE CITAS MEDICAS</h1>
+        <h2>CONOZCA A NUESTROS ESPECIALISTAS</h2>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-5">
+                    <img class="img-thumbnail" src="/imagenes/img_especialistas.png" alt="">
+                </div>
+                <div class="col-7">
+
+                    <div class="scroll">
+                        <% arregloDoctores.forEach( (objeto)=> { %>
+                        <div class="card" >
+                            <h5 class="card-header"><%= objeto.nombre %></h5>
+                            <div class="card-body">
+                                <h5 class="card-title"><%= objeto.especialidad %></h5>
+                                <p class="card-text"><strong>Correo:</strong> <%= objeto.correo %></p>
+                                <p class="card-text"><strong>Consultorio:</strong> <%= objeto.numeroConsultorio %> </p>
+                            </div>
+                        <% }) %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

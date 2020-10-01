@@ -29,27 +29,99 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6192312b-778a-49a8-bc6d-803a8e1af1a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/diagnostico/diagnostico.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/diagnostico/diagnostico.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/diagnostico/diagnostico.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/examen/examen.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/examen/examen.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/examen/examen.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/signos_vitales/signos-vitales.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/signos_vitales/signos-vitales.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/signos_vitales/signos-vitales.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/especialidad/especialidad.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/especialidad/especialidad.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/especialidad/especialidad.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/administrador/estilos-editar-doc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/administrador/estilos-home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/administrador/estilos-nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/administrador/estilos-registrar-doc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/doctor/estilos-citas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/doctor/estilos-home-doc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/doctor/estilos-nav-doc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/doctor/estilos-registrarCita-doc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/estilos-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/estilos-register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-agendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-editar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-especialistas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-historial.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-perfil.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/css/paciente/estilos-servicios.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/fondo_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/fondo_servicios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/icono.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/img_agendar_cita.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/img_especialistas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/img_historial.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/logo_perfil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/imagenes/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/alerta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/publico/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/sessions/0_ACo4vWIVrFypHyfqOTOmONWq5wjHhF.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/sessions/6yEiXLAt-QaL1PeAoW-F1HrmBnwCedxR.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/sessions/KtxHqK0LINRoHIxkdmp3lclKW-0pZlMd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/sessions/NqZjvlOACVtrIrTXiSiydTyYwijO7AU0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/sessions/nPq6eNiRMv2Q8TDyY9U3ehO5WKz3AD9J.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/sessions/vhBN9I2klJq-GU9LSAnVsqntDCy988I-.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/dto/cita.create-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/cita/dto/cita.update-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/Administrador/administrador.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/Administrador/administrador.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/dto/doctor.create-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/dto/doctor.update-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/dto/paciente.create-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/src/usuario/dto/paciente.update-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/administrador/crear-doctor.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/administrador/editar-doctor.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/administrador/home.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/administrador/nav.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/auth/login.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/auth/registrar.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/doctor/citas.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/doctor/home.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/doctor/nav-doctor.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/doctor/registrar-cita.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/paciente/agendarCita.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/paciente/especialistas.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/paciente/historial.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/paciente/home.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/paciente/nav-paciente.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/paciente/perfil.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proyecto/views/paciente/servicios.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proyecto/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/cita/cita.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/cita/cita.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/cita/cita.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/cita/cita.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/cita/cita.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/doctor/doctor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/usuario.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/usuario.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/usuario.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proyecto/src/usuario/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/src/usuario/usuario.service.ts" afterDir="false" />
@@ -74,11 +146,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../js-sango-chinchuna-katherin-lizbeth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Aplicaciones_K\GitKraken\Citas_Medicas_Web\proyecto\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Aplicaciones_K\GitKraken\Citas_Medicas_Web\proyecto\views\administrador" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Aplicaciones_K\GitKraken\Citas_Medicas_Web\proyecto\publico\js" />
+      <recent name="C:\Aplicaciones_K\GitKraken\Citas_Medicas_Web\proyecto\publico\css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,7 +172,8 @@
       <workItem from="1599765324874" duration="381000" />
       <workItem from="1599765941318" duration="98000" />
       <workItem from="1599774443198" duration="606000" />
-      <workItem from="1600122106067" duration="9740000" />
+      <workItem from="1600122106067" duration="10164000" />
+      <workItem from="1601488765555" duration="53467000" />
     </task>
     <servers />
   </component>
@@ -129,18 +211,35 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599779449195">
+    <state x="500" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601490789410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="500" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601490789410" />
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601502055305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601502055305" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601518648131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1599779449195" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601518648131" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1600122129561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1599765978555" />
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600122129561" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600146431608">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1601494199357">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600146431608" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1601494199357" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1601543252990">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601543252990" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601537117129">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601537117129" />
   </component>
 </project>

@@ -23,13 +23,10 @@ export class CitaService{
         const consulta: FindManyOptions<CitaEntity> ={
             where: [
                 {
-                    nombre: Like(`%${textoDeConsulta}%`)
+                    usuario: Like(`%${textoDeConsulta}%`)
                 },
                 {
-                    apellido: Like(`%${textoDeConsulta}%`)
-                },
-                {
-                    cedula: Like(`%${textoDeConsulta}%`)
+                    doctor: Like(`%${textoDeConsulta}%`)
                 }
             ]
         }
@@ -37,7 +34,7 @@ export class CitaService{
     }
 
     buscarUno(id: number){
-        return this.repositorio.findOne(id) //promesa
+        return this.repositorio.findOne(id, { relations: ["usuario", "doctor"] }) //promesa
     }
 
     editarUno(citaEditada: CitaEntity){
@@ -46,5 +43,10 @@ export class CitaService{
 
     eliminarUno(id: number){
         return this.repositorio.delete(id);
+    }
+
+    buscarUsuarios(){
+
+        return this.repositorio.find({ relations: ["usuario", "doctor"] }) //promesa
     }
 }

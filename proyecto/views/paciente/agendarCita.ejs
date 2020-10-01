@@ -1,0 +1,68 @@
+<%- include('../compartido/estilos-generales')%>
+
+<link rel="stylesheet" href="/css/paciente/estilos-agendar.css">
+
+<div>
+    <%- include('nav-paciente') %>
+
+    <div>
+        <h1>SISTEMA DE AGENDACIÓN DE CITAS MEDICAS</h1>
+        <h2>AGENDA TÚ CITA MEDICA</h2>
+
+        <div class="container mt-lg-4">
+
+            <div class="row">
+                <div class="col-6">
+                    <img class="img-thumbnail" src="/imagenes/img_agendar_cita.png" alt="">
+                </div>
+                <div class="col-6">
+
+                    <form action="http://localhost:3001/cita" method="POST">
+                        <div class="form-group row">
+                            <div class="col-10">
+                                <input type="text" class="form-control" name="nomb" value="<%= arregloPacientes.nombre%>">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-10">
+                                <textarea name="especialidad" id="especialidadID" cols="10" rows="5" class="form-control" placeholder="Especialidad"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-10">
+                                <label for="doctorId"></label>
+                                <select id="doctorId" name="doctor" required>
+                                    <% arregloDoctores.forEach( (objeto)=> { %>
+                                        <option value="<%= objeto.id %>"><%= objeto.nombre %></option>
+                                    <% }) %>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-10">
+                                <input type="date" class="form-control" id="dateAgendar" name="fechaCita" required>
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-10">
+                                <input type="time" class="form-control" placeholder="05:05" name="hora" >
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input id="estadoId" name="estado" type="text" value="Pendiente">
+                            <input id="usuarioId" name="usuario" type="text" value="<%= arregloPacientes.id%>">
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btn-info btn-block col-10 ">AGENDAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

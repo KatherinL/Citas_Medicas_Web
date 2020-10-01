@@ -6,6 +6,8 @@ import {CitaService} from "./cita.service";
 import {DiagnosticoModule} from "./diagnostico/diagnostico.module";
 import {ExamenModule} from "./examen/examen.module";
 import {SignosVitalesModule} from "./signos_vitales/signos-vitales.module";
+import {DoctorModule} from "../usuario/doctor/doctor.module";
+import {UsuarioModule} from "../usuario/usuario.module";
 
 @Module(
     {
@@ -25,6 +27,9 @@ import {SignosVitalesModule} from "./signos_vitales/signos-vitales.module";
                 )
         ],
         providers: [
+            CitaService
+        ],
+        exports:[
             CitaService
         ]
     }

@@ -2,6 +2,8 @@ import {Injectable} from "@nestjs/common";
 import {UsuarioEntity} from "./usuario.entity";
 import {FindManyOptions, Like, Repository} from "typeorm";
 import {InjectRepository} from "@nestjs/typeorm";
+import {doc} from "prettier";
+import line = doc.builders.line;
 
 @Injectable()
 export class UsuarioService{
@@ -25,10 +27,10 @@ export class UsuarioService{
                     nombre: Like(`%${textoDeConsulta}%`)
                 },
                 {
-                    apellido: Like(`%${textoDeConsulta}%`)
+                    cedula: Like(`%${textoDeConsulta}%`)
                 },
                 {
-                    cedula: Like(`%${textoDeConsulta}%`)
+                    correo: Like(`%${textoDeConsulta}%`)
                 }
             ]
         }
@@ -45,5 +47,17 @@ export class UsuarioService{
 
     eliminarUno(id: number){
         return this.repositorio.delete(id);
+    }
+
+    buscarLogin(email: string, pass: string){
+        const consulta: FindManyOptions<UsuarioEntity> ={
+            where: [
+                {
+                    correo: Like(`%${email}%`),
+                    password: Like(`%${pass}%`)
+                }
+            ]
+        }
+        return this.repositorio.find(consulta) //promesa
     }
 }

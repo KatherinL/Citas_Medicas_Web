@@ -1,0 +1,26 @@
+.imagen {
+    float: left;
+    width: 90%;
+    height: 86vh;
+    margin-right: 0px;
+    background-image: url(../../imagenes/fondo_servicios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+h1 {
+    display: inline;
+    text-align: center;
+    color: #fff;
+    width: 800px;
+}
+
+h2 {
+    width: 350px;
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 200px;
+}

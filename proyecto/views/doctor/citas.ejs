@@ -1,0 +1,70 @@
+<%- include('../compartido/estilos-generales')%>
+<link rel="stylesheet" href="/css/doctor/estilos-citas.css">
+
+<div>
+
+    <%- include('nav-doctor') %>
+
+    <div>
+
+        <h1>SISTEMA DE AGENDACIÓN DE CITAS MEDICAS</h1>
+        <h2>CITAS</h2>
+
+        <br>
+
+        <div class="container mt-0">
+
+            <div class="row">
+                <div class="col-5">
+                    <img class="img-thumbnail" src="/imagenes/img_historial.png" alt="">
+                </div>
+                <div class="col-7">
+
+                    <div class="scroll">
+                        <% arregloCitas.forEach( (objeto)=> { %>
+                        <div class="card" style="width: 50rem;">
+                            <div class="card-body" >
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.fechaCita %>" disabled>
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.hora %>" disabled>
+
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.usuario.nombre %>" disabled>
+                                        <input type="text" class="form-control mt-2" value="<%= objeto.usuario.genero %>" disabled>
+
+
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <input type="text" class="form-control mt-2" value=" <%= objeto.especialidad %>" disabled>
+                                        <input type="text" class="form-control mt-2" value=" <%= objeto.estado %>" disabled>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <a href="/doctor/vista/registro/<%=  objeto.idCita %>">
+                                    <button class="btn btn-info btn-block col-12 ">SELECCIONAR</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                            <% }) %>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,105 @@
+<%- include('../compartido/estilos-generales')%>
+<link rel="stylesheet" href="/css/doctor/estilos-registrarCita-doc.css">
+
+<div>
+    <%- include('nav-doctor') %>
+    <div>
+        <h1>SISTEMA DE AGENDACIÓN DE CITAS MEDICAS</h1>
+        <h2>CITAS</h2>
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-5">
+                    <img class="img-thumbnail" src="/imagenes/img_historial.png" alt="">
+                </div>
+                <div class="col-7 fondo">
+                    <br>
+
+                    <form action= " <%= 'http://localhost:3001/cita/registrarCitaDesdeVista/'+ cita.id%>" method="POST">
+
+                        <div class="form-group row">
+                            <div class="col-md-4 mb-3">
+
+                                <input type="text" class="form-control" id="registroPacienteDoc" name="usuario" value="<%= cita.usuario.nombre %>" disabled>
+                                <input type="text" class="form-control mt-2" id="registroEspecialistaDoc" name="especialidad" value="<%= cita.especialidad%>" disabled>
+
+
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <input type="text" class="form-control" id="registroDoctorDoc" name="doctor" value="<%= cita.doctor.nombre%>" disabled>
+                                <input type="text" class="form-control mt-2" id="registroDateDoc" name="fechaCita" value="<%= cita.fechaCita%>" disabled>
+                                <input type="time" class="form-control mt-2" id="registroHoraDoc" name="hora" value="<%= cita.hora %>" disabled>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+
+                                <label for="estadoId"></label>
+                                <select id="estadoId" name="estado" required class="form-control ">
+                                    <option value="Pendiente" id="estadoId"
+                                        <% if (cita.estado === 'Pendiente') { %>
+                                            selected
+                                        <%}%>
+                                    >Pendiente</option>
+                                    <option value="Realizado" id="estadoId"
+                                        <% if (cita.estado === 'Realizado') { %>
+                                            selected
+                                        <%}%>
+                                    >Realizado</option>
+                                    <option value="Cancelado" id="estadoId"
+                                        <% if (cita.estado === 'Cancelado') { %>
+                                            selected
+                                        <%}%>
+                                    >Cancelado</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <label for="signoVitales">Signos Vitales</label>
+                        <div class="form-group ">
+                            <input type="text" class="form-control " id="registroPulsoDoc" placeholder="Pulso" name="pulso" required>
+                            <input type="text" class="form-control " id="registroTempDoc" placeholder="Temperatura" name="temperatura" required>
+                            <input type="text" class="form-control " id="registroPresionDoc" placeholder="Presion Arterial" name="presion" required>
+                        </div>
+
+                        <label for="sintomas">Sintomas</label>
+                        <div class="form-group ">
+                            <textarea id="registroSintomasDoc" cols="10" rows="2" class="form-control" name="sintomas" required></textarea>
+                        </div>
+
+
+                        <label for="observaciones">Observaciones</label>
+                        <div class="form-group ">
+                            <textarea id="registroObservacionesDoc" cols="10" rows="2" class="form-control" name="observaciones" required></textarea>
+                        </div>
+
+
+                        <label for="receta">Receta</label>
+                        <div class="form-group ">
+                            <textarea id="registroRecetaDoc" cols="10" rows="2" class="form-control" name="receta" required></textarea>
+                        </div>
+
+
+                        <label for="examenes">Examenes</label>
+                        <div class="form-group ">
+                            <textarea id="registroExamnesDoc" cols="10" rows="2" class="form-control" name="examenes" required></textarea>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-info btn-block col-14">REGISTRAR</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>

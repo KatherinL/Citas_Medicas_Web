@@ -41,7 +41,7 @@ export class UsuarioEntity{
         name: 'genero',
         type: 'varchar',
         nullable: false,
-        length: '5'
+        length: '7'
     })
     genero:string;
 
